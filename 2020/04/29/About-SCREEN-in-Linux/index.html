@@ -3,25 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>git and github | KoGo</title>
+  <title>About SCREEN in Linux | KoGo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="CodeTool" />
+  <meta name="keywords" content="Code" />
   
   
   
   
-  <meta name="description" content="Today I learn some basic tips about git and GitHub. Github is a plate-form support co-program and mange the software project. There are some basic command for reminding how to use git and GitHub: Firs">
+  <meta name="description" content="Today I could like to record the how to use SCREEN command in Linux. First, creating a screen: 1$ screen -S session_name  After creating a screen, enter the screen and manage it: 123456789101112#Below">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git and github">
-<meta property="og:url" content="http://yoursite.com/2020/04/14/git-and-github/index.html">
+<meta property="og:title" content="About SCREEN in Linux">
+<meta property="og:url" content="http://yoursite.com/2020/04/29/About-SCREEN-in-Linux/index.html">
 <meta property="og:site_name" content="KoGo">
-<meta property="og:description" content="Today I learn some basic tips about git and GitHub. Github is a plate-form support co-program and mange the software project. There are some basic command for reminding how to use git and GitHub: Firs">
-<meta property="article:published_time" content="2020-04-14T09:59:43.000Z">
-<meta property="article:modified_time" content="2020-04-14T10:21:44.585Z">
+<meta property="og:description" content="Today I could like to record the how to use SCREEN command in Linux. First, creating a screen: 1$ screen -S session_name  After creating a screen, enter the screen and manage it: 123456789101112#Below">
+<meta property="article:published_time" content="2020-04-29T04:49:48.000Z">
+<meta property="article:modified_time" content="2020-04-29T06:47:38.312Z">
 <meta property="article:author" content="Gao Kun">
 <meta property="article:tag" content="Code">
-<meta property="article:tag" content="Tool">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="KoGo" type="application/atom+xml">
@@ -111,7 +110,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-git-and-github" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-About-SCREEN-in-Linux" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -119,7 +118,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      git and github
+      About SCREEN in Linux
     </h1>
   
 
@@ -127,8 +126,8 @@
     
     <div class="article-meta">
       
-	<a href="/2020/04/14/git-and-github/" class="article-date">
-	  <time datetime="2020-04-14T09:59:43.000Z" itemprop="datePublished">April 14, 2020</time>
+	<a href="/2020/04/29/About-SCREEN-in-Linux/" class="article-date">
+	  <time datetime="2020-04-29T04:49:48.000Z" itemprop="datePublished">April 29, 2020</time>
 	</a>
 
        
@@ -140,16 +139,30 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Today I learn some basic tips about git and GitHub.</p>
-<p>Github is a plate-form support co-program and mange the software project.</p>
-<p>There are some basic command for reminding how to use git and GitHub:</p>
-<p>First, create the git on the local:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init                       #create the git database to record the track</span><br><span class="line">git add $filename/$foldername  #add the file into local git database</span><br><span class="line">git commit -m "commit name"    #to commit the update of git</span><br></pre></td></tr></table></figure>
+        <p>Today I could like to record the how to use SCREEN command in Linux.</p>
+<p>First, creating a screen:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> screen -S session_name</span></span><br></pre></td></tr></table></figure>
 
-<p>Second, create the repositories and connect from the local terminal:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/Kun6/$repository_name.git  #connect to the github</span><br><span class="line">git push -u origin $master_name/$branch_name    #push or publish the local git and assest file into the github</span><br><span class="line">git pull master  #download the git and assest file from the github</span><br><span class="line">git revert $commit_hash_value  #this is a little bit risk, i tried once but failure</span><br><span class="line">git log  #review the state of local git databse</span><br><span class="line">git checkout -b &lt;$my_branch_name&gt;  #create the branch</span><br><span class="line">git branch   #check the current branch</span><br><span class="line">git checkout $beanch_name #switch the current branch</span><br></pre></td></tr></table></figure>
+<p>After creating a screen, enter the screen and manage it:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">Below are some most common commands <span class="keyword">for</span> managing Linux Screen Windows:</span></span><br><span class="line"></span><br><span class="line">Ctrl+a c #Create a new window (with shell)</span><br><span class="line">Ctrl+a " #List all window</span><br><span class="line">Ctrl+a 0 #Switch to window 0 (by number )</span><br><span class="line">Ctrl+a A #Rename the current window</span><br><span class="line">Ctrl+a S #Split current region horizontally into two regions</span><br><span class="line">Ctrl+a | #Split current region vertically into two regions</span><br><span class="line">Ctrl+a tab #Switch the input focus to the next region</span><br><span class="line">Ctrl+a Ctrl+a #Toggle between the current and previous region</span><br><span class="line">Ctrl+a Q #Close all regions but the current one</span><br><span class="line">Ctrl+a X #Close the current region</span><br></pre></td></tr></table></figure>
 
-<p> Ok, there is all of possible command may use in managing the project. Now, let’s start our next todos.</p>
+<p>Hang up the screen for temporary:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+a -&gt; d</span><br></pre></td></tr></table></figure>
+
+<p> Resume the screen:</p>
+<p>To find the session ID list the current running screen sessions with:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> screen -ls</span></span><br></pre></td></tr></table></figure>
+
+<p>To resume your screen session use the following command:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> screen -r <span class="variable">$ID</span></span></span><br></pre></td></tr></table></figure>
+
+<p>For recode the content of the screen:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+A -&gt; Shift+H #the contents from screen are stored into file `screenlog.0` while the program is still running. The screenlog.$num $num is the ID of the current screen window.</span><br></pre></td></tr></table></figure>
+
+<p>That is all.</p>
+<p>Recently, I am focus on the implement of idea. Maybe I need to training code on PKU server for efficient. Then fix result and compare with other related works. The computation with other model is important .</p>
+<p>The English slang, Leetcode, Interview and Investment is also important. </p>
+<p>Good Luck! ☘️</p>
 
       
     </div>
@@ -157,7 +170,7 @@
       
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Code/" rel="tag">Code</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tool/" rel="tag">Tool</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Code/" rel="tag">Code</a></li></ul>
 
       
         
@@ -192,19 +205,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/04/29/About-SCREEN-in-Linux/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          About SCREEN in Linux
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/04/12/41202/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/04/14/git-and-github/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">One day to fix the HEXO :)</div>
+      <div class="article-nav-title">git and github</div>
     </a>
   
 </nav>
