@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="KoGo">
 <meta property="og:description" content="Today I could like to record the how to use SCREEN command in Linux. First, creating a screen: 1$ screen -S session_name  After creating a screen, enter the screen and manage it: 123456789101112#Below">
 <meta property="article:published_time" content="2020-04-29T04:49:48.000Z">
-<meta property="article:modified_time" content="2020-04-29T06:47:38.312Z">
+<meta property="article:modified_time" content="2020-05-06T03:09:25.118Z">
 <meta property="article:author" content="Gao Kun">
 <meta property="article:tag" content="Code">
 <meta name="twitter:card" content="summary">
@@ -156,8 +156,11 @@
 <p>To resume your screen session use the following command:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> screen -r <span class="variable">$ID</span></span></span><br></pre></td></tr></table></figure>
 
-<p>For recode the content of the screen:</p>
+<p>For record the content of the screen:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+A -&gt; Shift+H #the contents from screen are stored into file `screenlog.0` while the program is still running. The screenlog.$num $num is the ID of the current screen window.</span><br></pre></td></tr></table></figure>
+
+<p>For delete the screen socket:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+A -&gt; input ':quit'</span><br></pre></td></tr></table></figure>
 
 <p>That is all.</p>
 <p>Recently, I am focus on the implement of idea. Maybe I need to training code on PKU server for efficient. Then fix result and compare with other related works. The computation with other model is important .</p>
