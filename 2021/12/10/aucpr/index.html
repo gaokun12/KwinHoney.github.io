@@ -11,16 +11,16 @@
   
   
   
-  <meta name="description" content="Why AUC-PRAUC-PR is a important indicator to test whether the classifier&#x2F;learning model have a nice ability to make the correct predition. The prediction process usually happens a lot of area.  Precis">
+  <meta name="description" content="Why AUC-PRAUC-PR is a important indicator to test whether the classifier&#x2F;learning model have a nice ability to make the correct predition. The prediction process usually happens a lot of area.  Defini">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AUC-PR">
 <meta property="og:url" content="http://yoursite.com/2021/12/10/aucpr/index.html">
 <meta property="og:site_name" content="Kun&#39;s Blog">
-<meta property="og:description" content="Why AUC-PRAUC-PR is a important indicator to test whether the classifier&#x2F;learning model have a nice ability to make the correct predition. The prediction process usually happens a lot of area.  Precis">
+<meta property="og:description" content="Why AUC-PRAUC-PR is a important indicator to test whether the classifier&#x2F;learning model have a nice ability to make the correct predition. The prediction process usually happens a lot of area.  Defini">
 <meta property="og:image" content="http://yoursite.com/2021/12/10/aucpr/predicted%20matrix.jpeg">
 <meta property="og:image" content="http://yoursite.com/2021/12/10/aucpr/exam.jpeg">
 <meta property="article:published_time" content="2021-12-10T13:28:23.000Z">
-<meta property="article:modified_time" content="2021-12-10T13:56:09.214Z">
+<meta property="article:modified_time" content="2021-12-12T08:43:52.547Z">
 <meta property="article:author" content="Gao Kun">
 <meta property="article:tag" content="Research">
 <meta name="twitter:card" content="summary">
@@ -138,7 +138,8 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Why-AUC-PR"><a href="#Why-AUC-PR" class="headerlink" title="Why AUC-PR"></a>Why AUC-PR</h2><p>AUC-PR is a important indicator to test whether the classifier/learning model have a nice ability to make the correct predition. The prediction process usually happens a lot of area. </p>
+        <h3 id="Why-AUC-PR"><a href="#Why-AUC-PR" class="headerlink" title="Why AUC-PR"></a>Why AUC-PR</h3><p>AUC-PR is a important indicator to test whether the classifier/learning model have a nice ability to make the correct predition. The prediction process usually happens a lot of area. </p>
+<h3 id="Definition-of-Precision-and-Recall"><a href="#Definition-of-Precision-and-Recall" class="headerlink" title="Definition of Precision and Recall"></a>Definition of Precision and Recall</h3><p>We usually test the values of precision and recall on testing datase[^1].</p>
 <p>Precision: $\frac{T_P}{T_P+F_N}$ </p>
 <p>Recall:$\frac{T_P}{T_P + F_P}$</p>
 <img src="/2021/12/10/aucpr/predicted matrix.jpeg" alt="predicted matrix" style="zoom:50%;" />
@@ -146,6 +147,8 @@
 <p>The $n_1= T_P$, $n_2 = F_P$,$n_3 = T_N$, and $n_4 = F_N$.   </p>
 <p>The AUC-PR are the curve under pairs of values (Recal, Precision) under different thresholds. A example are shown in the figure: </p>
 <img src="/2021/12/10/aucpr/exam.jpeg" alt="exam" style="zoom: 25%;" />
+
+<h6 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h6><p>[^1]:Davis, J., &amp; Goadrich, M. (2006, June). The relationship between Precision-Recall and ROC curves. In <em>Proceedings of the 23rd international conference on Machine learning</em> (pp. 233-240).</p>
 
       
     </div>
@@ -205,7 +208,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-AUC-PR"><span class="nav-number">1.</span> <span class="nav-text">Why AUC-PR</span></a></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-AUC-PR"><span class="nav-number">1.</span> <span class="nav-text">Why AUC-PR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Definition-of-Precision-and-Recall"><span class="nav-number">2.</span> <span class="nav-text">Definition of Precision and Recall</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Reference"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">Reference:</span></a></li></ol></li></ol></li></ol></li></ol>
     
     </div>
   </aside>
