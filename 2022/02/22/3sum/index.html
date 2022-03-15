@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>LeetCode n-numbers problem | Kun&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="LeetCode" />
+  
+  
+  
+  
+  <meta name="description" content="3 numbers – LeetCode #16Some quizs about three numbers in LeetCode.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode n-numbers problem">
+<meta property="og:url" content="http://yoursite.com/2022/02/22/3sum/index.html">
+<meta property="og:site_name" content="Kun&#39;s Blog">
+<meta property="og:description" content="3 numbers – LeetCode #16Some quizs about three numbers in LeetCode.">
+<meta property="article:published_time" content="2022-02-22T07:28:23.000Z">
+<meta property="article:modified_time" content="2022-03-09T08:13:37.690Z">
+<meta property="article:author" content="Gao Kun">
+<meta property="article:tag" content="LeetCode">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Kun&#39;s Blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="Kun&#39;s Blog" rel="home"> Kun&#39;s Blog </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">I am a Ph.D. student at the department of computer science, Peking University.</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/kwin">cv</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-3sum" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      LeetCode n-numbers problem
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2022/02/22/3sum/" class="article-date">
+	  <time datetime="2022-02-22T07:28:23.000Z" itemprop="datePublished">February 22, 2022</time>
+	</a>
+
+       
+      
+
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="3-numbers-–-LeetCode-16"><a href="#3-numbers-–-LeetCode-16" class="headerlink" title="3 numbers – LeetCode #16"></a>3 numbers – LeetCode #16</h1><p>Some quizs about three numbers in LeetCode. </p>
+<a id="more"></a>
+
+<h5 id="The-question"><a href="#The-question" class="headerlink" title="The question:"></a>The question:</h5><p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code>such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
+<p>Notice that the solution set must not contain duplicate triplets.</p>
+<h5 id="The-method"><a href="#The-method" class="headerlink" title="The method:"></a>The method:</h5><ul>
+<li>The three numbers problem needs a iterator to travel all numbers in the list (call a main interator). Besides, we also need two other iterators to perform the add operation. The number of all iterators are three. Hence, the time complexity is $O(n^2)$.</li>
+<li>How to find the right solution?<ul>
+<li>Do the sort for the given list ($O(n \cdot \text{log}n)$);</li>
+<li>We compare the addition between target and the current additon. If the current addition less than the target, then we move the middle iterator to move to the right side. Similiarily, if the current addition large thant the target, then we move the rightest iterator move to the left side. </li>
+<li>We need a distanace value to measure the distance betweent he current addition with the target.</li>
+</ul>
+</li>
+</ul>
+<h5 id="The-code"><a href="#The-code" class="headerlink" title="The code:"></a>The code:</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment">## parameters are input at below</span></span><br><span class="line">    nums = [<span class="number">-55</span>,<span class="number">-24</span>,<span class="number">-18</span>,<span class="number">-11</span>,<span class="number">-7</span>,<span class="number">-3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">11</span>,<span class="number">23</span>,<span class="number">33</span>]</span><br><span class="line">    target = <span class="number">0</span></span><br><span class="line">    <span class="comment"># the function are input as below</span></span><br><span class="line">    final_distance = <span class="number">100000</span></span><br><span class="line">    nums.sort()</span><br><span class="line">    s = nums</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(s)):</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># fins the flag </span></span><br><span class="line">        j = i+<span class="number">1</span></span><br><span class="line">        k = len(nums)<span class="number">-1</span></span><br><span class="line">        <span class="keyword">if</span> j&gt;= k:</span><br><span class="line">            continu</span><br><span class="line">        <span class="comment"># compute the distance and the current sum</span></span><br><span class="line">        sum_c = s[i] + s[j] + s[k]</span><br><span class="line">        distance = abs(target - sum_c) <span class="comment"># the distance in here indicates the minimal distance</span></span><br><span class="line">   </span><br><span class="line">        <span class="keyword">if</span> distance == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> sum_c</span><br><span class="line">        current_res = sum_c</span><br><span class="line">        </span><br><span class="line">        check_flag = <span class="literal">True</span></span><br><span class="line">        <span class="keyword">while</span> check_flag:</span><br><span class="line">            </span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> sum_c &lt; target:</span><br><span class="line">                j+=<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span> sum_c &gt; target:</span><br><span class="line">                k -= <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> j&gt;=k:</span><br><span class="line">                check_flag = <span class="literal">False</span></span><br><span class="line">                res_t = sum_c</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            </span><br><span class="line">            <span class="comment"># calculate the new value</span></span><br><span class="line">            sum_c = s[i]+s[j]+s[k]</span><br><span class="line">            new_d = abs(sum_c - target)</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> new_d == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">return</span> sum_c</span><br><span class="line">            <span class="keyword">if</span> new_d &lt;= distance:</span><br><span class="line">						<span class="comment"># if the distance less than the current distance, we need to update the </span></span><br><span class="line">						<span class="comment">#	result and the new minimal distance </span></span><br><span class="line">                distance = new_d</span><br><span class="line">                current_res = sum_c</span><br><span class="line">            <span class="comment"># else:</span></span><br><span class="line">            <span class="comment">#     check_flag = False</span></span><br><span class="line">        <span class="keyword">if</span> distance &lt;= final_distance:</span><br><span class="line">            final_distance = distance</span><br><span class="line">            res_f = current_res</span><br><span class="line">    <span class="keyword">return</span> res_f</span><br><span class="line">  </span><br><span class="line">print(main())</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4-numbers-–-LeetCode-18"><a href="#4-numbers-–-LeetCode-18" class="headerlink" title="4 numbers – LeetCode #18"></a>4 numbers – LeetCode #18</h1><p>Smiliarly, we can use the above idea to solve the four method problem. </p>
+<h5 id="The-problem"><a href="#The-problem" class="headerlink" title="The problem:"></a>The problem:</h5><p>Given an array <code>nums</code> of <code>n</code> integers, return <em>an array of all the *</em>unique** quadruplets*<code>[nums[a], nums[b], nums[c], nums[d]]</code> such that:</p>
+<ul>
+<li><code>0 &lt;= a, b, c, d &lt; n</code></li>
+<li><code>a</code>, <code>b</code>, <code>c</code>, and <code>d</code> are <strong>distinct</strong>.</li>
+<li><code>nums[a] + nums[b] + nums[c] + nums[d] == target</code></li>
+</ul>
+<p>You may return the answer in <strong>any order</strong>.</p>
+<h5 id="The-idea"><a href="#The-idea" class="headerlink" title="The idea:"></a>The idea:</h5><p>We just use four iterators to search the whole list. However, the time complexity is not $O(n^2)$ in this situation. It turns $O(n^3)$ because we use two main iteraors during the search process. </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment">## parameters are input at below</span></span><br><span class="line">    nums =[<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>]</span><br><span class="line">    target = <span class="number">8</span></span><br><span class="line">    <span class="comment"># the function are input as below</span></span><br><span class="line">    all_res_s = set([])</span><br><span class="line">    all_res = []</span><br><span class="line">    nums.sort()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i+<span class="number">1</span>,len(nums)):</span><br><span class="line">            k = j+<span class="number">1</span></span><br><span class="line">            s = len(nums) - <span class="number">1</span></span><br><span class="line">            </span><br><span class="line">            <span class="comment"># check the condition whether fail</span></span><br><span class="line">            <span class="keyword">if</span> k &gt;= s:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            </span><br><span class="line">            <span class="comment"># compute the sum </span></span><br><span class="line">            addition = nums[i] + nums[j] + nums[k] + nums[s]</span><br><span class="line">            <span class="comment">#   check whether equal with the target</span></span><br><span class="line">            <span class="keyword">if</span> addition == target:</span><br><span class="line">                <span class="comment"># check whether duplicated </span></span><br><span class="line">                ans = [nums[i],nums[j],nums[k],nums[s]]</span><br><span class="line">                <span class="keyword">if</span> str(ans) <span class="keyword">not</span> <span class="keyword">in</span> all_res_s:</span><br><span class="line">                    all_res_s.add(str(ans))</span><br><span class="line">                    all_res.append(ans)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># do the search procdure </span></span><br><span class="line">            check_flag = <span class="literal">True</span> </span><br><span class="line">            <span class="keyword">while</span> check_flag:</span><br><span class="line">                <span class="comment"># check the basic condition </span></span><br><span class="line">                <span class="keyword">if</span> k &gt;= s:</span><br><span class="line">                    check_flag = <span class="literal">False</span> <span class="comment"># stop checking in the continue process</span></span><br><span class="line">                    <span class="keyword">continue</span> </span><br><span class="line">                <span class="keyword">if</span> addition &lt; target:</span><br><span class="line">                    k += <span class="number">1</span></span><br><span class="line">                <span class="keyword">elif</span> addition &gt; target:</span><br><span class="line">                    s -= <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="comment"># check whether duplicated </span></span><br><span class="line">                    ans = [nums[i],nums[j],nums[k],nums[s]]</span><br><span class="line">                    <span class="keyword">if</span> str(ans) <span class="keyword">not</span> <span class="keyword">in</span> all_res_s:</span><br><span class="line">                        all_res_s.add(str(ans))</span><br><span class="line">                        all_res.append(ans)</span><br><span class="line">                    <span class="comment"># update the statues</span></span><br><span class="line">                    k+=<span class="number">1</span> </span><br><span class="line">                    addition = nums[i] + nums[j] + nums[k] + nums[s]</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line">                <span class="comment"># check the basic condition </span></span><br><span class="line">                <span class="keyword">if</span> k &gt;= s:</span><br><span class="line">                    check_flag = <span class="literal">False</span> <span class="comment"># stop checking in the continue process</span></span><br><span class="line">                    <span class="keyword">continue</span> </span><br><span class="line">                addition = nums[i] + nums[j] + nums[k] + nums[s]</span><br><span class="line">    <span class="keyword">return</span> all_res</span><br><span class="line">            </span><br><span class="line"></span><br><span class="line">print(main())</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC81NTc1Ni8zMjIyMg">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/03/05/arrow-style/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Arrow Questions
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/12/27/colon-semicolon/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Capitalize the first word after a colon and semicolon or not?</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#3-numbers-–-LeetCode-16"><span class="nav-number">1.</span> <span class="nav-text">3 numbers – LeetCode #16</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#The-question"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">The question:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#The-method"><span class="nav-number">1.0.0.0.2.</span> <span class="nav-text">The method:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#The-code"><span class="nav-number">1.0.0.0.3.</span> <span class="nav-text">The code:</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-numbers-–-LeetCode-18"><span class="nav-number">2.</span> <span class="nav-text">4 numbers – LeetCode #18</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#The-problem"><span class="nav-number">2.0.0.0.1.</span> <span class="nav-text">The problem:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#The-idea"><span class="nav-number">2.0.0.0.2.</span> <span class="nav-text">The idea:</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/kwin" class="mobile-nav-link">CV</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2022 Kun&#39;s Blog All Rights Reserved.
+        
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+<script src="/js/bootstrap.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
